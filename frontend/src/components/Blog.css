@@ -1,0 +1,10 @@
+.Blog {
+  margin: 10px auto;
+  width: 60%;
+}
+
+.blogimage{
+  max-height: 600px;
+  width: auto;
+  object-fit: contain;
+}
