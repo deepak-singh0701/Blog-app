@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { Component } from "react";
 import { Navbar, Nav ,Button} from "react-bootstrap";
 import "./Navbar.css";
@@ -6,6 +5,7 @@ import "./Navbar.css";
 class Navigation extends Component {
     constructor(props){
         super(props);
+        this.state={};
     }
   render() {
 

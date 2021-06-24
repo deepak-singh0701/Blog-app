@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { Component } from 'react';
-import { Form, Image , Button, Container } from 'react-bootstrap';
+import { Form, Button, Container } from 'react-bootstrap';
 import Navbar from "./Navbar";
 
 class Editprofile extends Component {
@@ -31,7 +31,7 @@ class Editprofile extends Component {
         e.preventDefault();
         let res =await axios.post("/profile/edit" , this.state);
         console.log(res.data);
-        if(res.data=="success"){
+        if(res.data==="success"){
             console.log("here");
             this.props.history.push("/user/profile");
         }

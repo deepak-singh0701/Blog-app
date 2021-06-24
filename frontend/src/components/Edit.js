@@ -40,7 +40,7 @@ class Edit extends Component {
 
   submitHandler = async (e) => {
     e.preventDefault();
-    const data = await axios.patch(
+     await axios.patch(
       `/blogs/${this.props.match.params.id}`,
       this.state
     );

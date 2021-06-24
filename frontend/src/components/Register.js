@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { Button, Container, FormControl, InputGroup } from "react-bootstrap";
+import { Button, Container, FormControl } from "react-bootstrap";
 import Navbar from "./Navbar";
 
 class Login extends Component {

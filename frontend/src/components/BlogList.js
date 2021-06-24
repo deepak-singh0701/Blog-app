@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Blog from './Blog';
 import axios from 'axios';
-import {Link} from 'react-router-dom';
 import Navbar from './Navbar';
 
 class BlogList extends Component {

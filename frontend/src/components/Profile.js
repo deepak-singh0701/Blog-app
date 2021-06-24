@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component} from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
@@ -33,7 +33,9 @@ class Profile extends Component {
         return (
             <div>
             <Navbar usersName={this.state.usersName}/>
-                <img src={this.state.img}/>
+            <br/>
+            <br/>
+                <img src={this.state.img} alt="profilepic"/>
                 <Link to="/profile/edit">
                 <Button variant="warning">
                 Edit Profile
