@@ -52,6 +52,7 @@ class Editprofile extends Component {
                 <Form.Control name="name" type="text" value={this.state.name} onChange={this.changeHandler}></Form.Control>
                 <Form.Label>Email:</Form.Label>
                 <Form.Control name="email" type="email" value={this.state.email} onChange={this.changeHandler}></Form.Control>
+                <br/>
                 <Button type="submit">Update</Button>
             </form>
             </Container>

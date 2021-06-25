@@ -12,12 +12,10 @@ class Navigation extends Component {
     function profile(name) {
       if (name.authpage !== "true"){
         if (name.usersName === "") {
-            
           return <div>
               <Nav.Link href="/login">Login</Nav.Link>;
           </div>
         } else {
-          console.log(name);
           return (
             <div>
             <Nav.Link bsPrefix="custom" href="/blogs/new"><Button>+ Add Your Blog</Button></Nav.Link>
@@ -40,7 +38,7 @@ class Navigation extends Component {
     return (
       <div>
         <Navbar bg="dark" variant="dark" expand="lg">
-          <Navbar.Brand href="/blogs">React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand href="/blogs">Blog App</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">

@@ -18,6 +18,7 @@ router.post(
 
 router.post("/register", async (req, res) => {
   const newUser = new User({
+    proimage:"https://moonvillageassociation.org/wp-content/uploads/2018/06/default-profile-picture1.jpg",
     name:req.body.name,
     email:req.body.email,
     username: req.body.username,
