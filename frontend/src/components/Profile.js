@@ -40,7 +40,7 @@ class Profile extends Component {
                 <Link to="/user/blogs">
                     <Button >My Blogs</Button>
                 </Link>
-                <div style={{textAlign:"left" , maxWidth:450 , marginLeft:"auto" , marginRight:"auto"}}>
+                <div style={{ textAlign:"left" , maxWidth:450 , marginLeft:"auto" , marginRight:"auto"}}>
                     <h3>Name:{this.state.name}</h3>
                     <h3>Username:{this.state.username}</h3>
                     <h3>Email:{this.state.email}</h3> 

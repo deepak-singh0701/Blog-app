@@ -18,7 +18,8 @@ const userSchema =new mongoose.Schema({
     myblog:[{
         type:mongoose.Schema.Types.ObjectId,
         ref:"Blog"
-    }]
+    }],
+    public_id:String
 });
 userSchema.plugin(passportLocalMongoose);
 
