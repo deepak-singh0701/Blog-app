@@ -19,7 +19,7 @@ class BlogList extends Component {
                 this.setState({usersName:user.data.name})
             }
             const fetchedBlogs = await axios.get('/blogs');
-            this.setState({ blogs: fetchedBlogs.data });
+            this.setState({flash:true, blogs: fetchedBlogs.data });
     }
 
 

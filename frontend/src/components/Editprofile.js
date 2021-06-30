@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { Component } from 'react';
-import { Form, Button, Container } from 'react-bootstrap';
+import { Form, Button, Container} from 'react-bootstrap';
 import Navbar from "./Navbar";
 
 class Editprofile extends Component {
@@ -45,9 +45,8 @@ class Editprofile extends Component {
         }
 
     imageHandler=async (e)=>{
-        console.log(this.state);
         const data = new FormData();
-        if(this.state.newimg.size<=1024 && (this.state.newimg.type===jpeg || this.state.newimg.type===jpg) ){
+        if(this.state.newimg.size<=1000000 && (this.state.newimg.type==="image/jpeg" || this.state.newimg.type==="image/jpg") ){
             data.append("file" , this.state.newimg);
             data.append("upload_preset" , "irxiwaz0")
             const response = await axios.post("https://api.cloudinary.com/v1_1/rex07/image/upload" , data);
@@ -72,7 +71,7 @@ class Editprofile extends Component {
             <h3 style={{marginTop:20}}>{this.state.userName}</h3>
             <form onSubmit={this.changeHandler}>
                 <img src={this.state.img} alt="profilepic" style={{maxWidth:250 , maxHeight:250}}/><br/><br/>
-                <input name="img" onChange={(e)=>{this.setState({newimg:e.target.files[0]})}} type="file" encType="multipart/form-data"/>
+                <Form.Control name="img" onChange={(e)=>{this.setState({newimg:e.target.files[0]})}} type="file"/>
                 <Button type="submit" onClick={this.imageHandler} variant="warning">Upload Profile Picture</Button><br/><br/> 
             </form>
             <form onSubmit={this.submitHandler}>
