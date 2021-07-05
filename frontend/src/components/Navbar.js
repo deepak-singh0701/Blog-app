@@ -13,7 +13,7 @@ class Navigation extends Component {
       if (name.authpage !== "true"){
         if (name.usersName === "") {
           return <div>
-              <Nav.Link href="/login">Login</Nav.Link>;
+              <Nav.Link href="/login">Login</Nav.Link>
           </div>
         } else {
           return (

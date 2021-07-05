@@ -12,6 +12,7 @@ const User = require("./models/user");
 const blogRoutes = require('./routes/blog');
 const authRoutes = require ('./routes/auth');
 const profileRoutes = require("./routes/profile");
+const likeRoutes = require("./routes/like");
 
 
 mongoose.connect('mongodb://localhost:27017/ng-blog-app',
@@ -51,6 +52,7 @@ passport.deserializeUser(User.deserializeUser());
 app.use(authRoutes);
 app.use(blogRoutes);
 app.use(profileRoutes);
+app.use(likeRoutes);
 
 
 app.listen(8080, () => {

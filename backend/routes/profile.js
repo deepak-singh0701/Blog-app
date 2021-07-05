@@ -26,7 +26,6 @@ router.post("/profile/edit" , isLoggedIn ,async (req,res)=>{
       res.send("success");
     })
     .catch(e=>{
-      console.log(e);
       res.send("error");
     })
 })

@@ -34,6 +34,7 @@ class BlogList extends Component {
                 img={blog.img}
                 content={content}
                 createdAt={blog.createdAt}
+                like={true}
             />
         })
 
